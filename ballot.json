@@ -3,21 +3,23 @@
     "name": "Illinois General Primary Election",
     "date": "March 17, 2026",
     "polls": "6:00 AM – 7:00 PM",
-    "note": "Voters must declare a party (Democratic or Republican) to receive a partisan ballot. An independent ballot contains only referenda."
+    "precinct": "Ward 43, Precinct 16 — Chicago (Lincoln Park)",
+    "earlyVoting": "Lincoln Park Branch Library, 1150 W. Fullerton Ave.",
+    "note": "Voters must declare a party (Democratic, Republican, or Libertarian) to receive a partisan ballot. Choosing Independent gives you only referenda. The Democratic primary winner is heavily favored in every race listed here — this district is D+19 or stronger at every level."
   },
   "races": [
     {
       "id": "us-senate",
-      "title": "U.S. Senate",
-      "level": "Federal",
-      "description": "Illinois voters will elect one member to the U.S. Senate. This seat was held by Dick Durbin since 1997; Durbin declined to seek a sixth term. The primary winner will face the opposite party's nominee in the November 3, 2026 general election.",
+      "title": "U.S. Senate — Illinois",
+      "level": "Federal · Statewide",
+      "description": "Dick Durbin is retiring after holding this seat since 1997 — the first open Senate seat in Illinois since 2010. The winner of the March 17 primary faces the opposing party's nominee on November 3, 2026.",
       "candidates": [
         {
           "name": "Raja Krishnamoorthi",
           "party": "Democratic",
-          "status": "Frontrunner",
-          "bio": "U.S. Representative for Illinois' 8th Congressional District since 2017. Krishnamoorthi earned a bachelor's degree in mechanical engineering and public policy from Princeton (1995) and a J.D. from Harvard Law (2000). He previously worked as an attorney, small-business owner, law clerk, and deputy Illinois State Treasurer.",
-          "priorities": ["Reining in abuses of executive power", "Supporting workers and small businesses", "Affordable healthcare"],
+          "status": "Fundraising frontrunner",
+          "bio": "U.S. Representative for IL-8 (northwest suburbs near O'Hare) since 2017. Princeton mechanical engineering & public policy graduate; Harvard Law J.D. Former attorney, small-business owner, and deputy Illinois State Treasurer. An outspoken opponent of the Trump administration.",
+          "priorities": ["Checking abuses of executive power", "Worker and small-business support", "Affordable healthcare"],
           "fundraising": "$24.9 million raised",
           "endorsements": ["Labor leaders", "Former Obama chief of staff Bill Daley"]
         },
@@ -25,43 +27,43 @@
           "name": "Robin Kelly",
           "party": "Democratic",
           "status": "Frontrunner",
-          "bio": "U.S. Representative for Illinois' 2nd Congressional District since 2013. Kelly previously served in the Illinois House, as chief of staff to Illinois Treasurer Alexi Giannoulias, and as Cook County Board President Toni Preckwinkle's chief administrative officer. She lives in south suburban Matteson.",
-          "priorities": ["Taxing the ultra-wealthy", "Raising the federal minimum wage", "Expanding Medicare", "Gun violence prevention"],
+          "bio": "U.S. Representative for IL-2 (south suburban) since 2013. Former Illinois state representative, chief of staff to State Treasurer Alexi Giannoulias, and chief administrative officer under Cook County Board President Toni Preckwinkle.",
+          "priorities": ["Taxing the ultra-wealthy", "Raising federal minimum wage", "Expanding Medicare", "Gun violence prevention"],
           "fundraising": "$2.7 million raised",
-          "endorsements": ["Congressional Black Caucus", "Gun violence prevention groups", "LGBT advocacy groups"]
+          "endorsements": ["Congressional Black Caucus", "Gun violence prevention groups", "LGBTQ+ advocacy groups"]
         },
         {
           "name": "Juliana Stratton",
           "party": "Democratic",
           "status": "Frontrunner",
-          "bio": "Lieutenant Governor of Illinois since 2019. Stratton served one term in the Illinois House before becoming lieutenant governor. She was the first candidate to announce after Durbin's retirement and immediately received the endorsement of Governor JB Pritzker.",
-          "priorities": ["Medicare for All", "Federal minimum wage increase to $25/hr", "Abolishing ICE", "Tax cuts for middle class funded by millionaire tax", "John Lewis Voting Rights Act"],
+          "bio": "Illinois Lieutenant Governor since 2019, formerly an Illinois state representative. First to announce after Durbin's retirement and immediately endorsed by Governor Pritzker. Pritzker funneled $5 million into a super PAC supporting her.",
+          "priorities": ["Medicare for All", "Federal minimum wage to $25/hr", "Abolishing ICE", "Middle-class tax cuts funded by millionaire tax", "John Lewis Voting Rights Act"],
           "fundraising": "$2.1 million raised",
           "endorsements": ["Governor JB Pritzker (via $5M super PAC)"]
         },
         {
           "name": "Steve Botsford Jr.",
           "party": "Democratic",
-          "bio": "Grew up in the northwest suburbs of Illinois and graduated from Notre Dame, where he walked on to the football team. After college, he worked on Capitol Hill for Congressman Tony Cárdenas drafting legislation on economic mobility and workforce issues. He later earned a master's in applied economics from Georgetown and an MBA from Northwestern.",
+          "bio": "Northwest suburbs native. Notre Dame graduate who walked on to the football team. Worked on Capitol Hill for Rep. Tony Cárdenas drafting economic mobility legislation. Holds a master's in applied economics from Georgetown and an MBA from Northwestern.",
           "priorities": ["Economic mobility", "Workforce development"]
         },
         {
           "name": "Awisi A. Bustos",
           "party": "Democratic",
-          "bio": "Nonprofit executive and first-generation Ghanaian American. Previously served as CEO of the Illinois Alliance of Boys & Girls Clubs, overseeing an $11 million budget.",
-          "priorities": ["Restoring integrity and justice to public service", "Youth development"]
+          "bio": "Nonprofit executive and first-generation Ghanaian American. Former CEO of the Illinois Alliance of Boys & Girls Clubs, overseeing an $11 million budget.",
+          "priorities": ["Restoring integrity to public service", "Youth development"]
         },
         {
           "name": "Jonathan Dean",
           "party": "Democratic",
-          "bio": "Activist, entrepreneur, and litigator who describes himself as 'a proud survivor of childhood sexual abuse.' He says Illinois needs a senator who will fight for young people and working families and stand against fascism.",
+          "bio": "Activist, entrepreneur, and litigator who describes himself as a proud survivor of childhood sexual abuse. Running to fight for young people, working families, and civil liberties.",
           "priorities": ["Youth issues", "Working families", "Civil liberties"]
         },
         {
           "name": "Bryan Maxwell",
           "party": "Democratic",
-          "bio": "Assistant research scientist and project engineer at the University of Illinois at Urbana-Champaign. Has spent the last two years organizing against U.S. military aid to Israel.",
-          "priorities": ["Redirecting military spending to local communities", "Ending the Gaza conflict"]
+          "bio": "Assistant research scientist and project engineer at the University of Illinois Urbana-Champaign. Has organized to stop U.S. military aid to Israel.",
+          "priorities": ["Redirecting military spending to communities", "Ending the Gaza conflict"]
         },
         {
           "name": "Sean Brown",
@@ -81,27 +83,27 @@
         {
           "name": "Don Tracy",
           "party": "Republican",
-          "status": "Frontrunner",
-          "bio": "Attorney, former chairman of the Illinois Republican Party, and former chairman of the Illinois Gaming Board. Tracy argues that when Durbin retires, all statewide elected officials will reside in Chicago or Cook County, leaving the other 101 counties without representation.",
-          "priorities": ["Fiscal issues", "Representing downstate Illinois", "Aligning with Trump administration priorities"]
+          "status": "Republican frontrunner",
+          "bio": "Attorney, former Illinois Republican Party chairman, and former Illinois Gaming Board chairman. Argues that with Durbin's retirement all statewide elected officials will be from Chicago or Cook County — leaving 101 downstate counties without a voice.",
+          "priorities": ["Fiscal conservatism", "Representing downstate Illinois", "Trump administration alignment"]
         },
         {
           "name": "R. Cary Capparelli",
           "party": "Republican",
-          "bio": "International businessman and educator. Son of the late Ralph C. Capparelli, who served 17 consecutive terms as a moderate Democrat in the Illinois House. Cary's career spanned the globe, including organizing the first motorsports competitions between the U.S. and the former Soviet Union.",
-          "priorities": ["Strong military", "Supporting veterans", "Border security", "Healthcare accessibility", "Mental health crisis"]
+          "bio": "International businessman and educator. Son of longtime moderate Democratic state rep Ralph C. Capparelli. Career spanned the globe, including organizing the first U.S.–Soviet Union motorsports competitions.",
+          "priorities": ["Strong military", "Veterans support", "Border security", "Healthcare affordability", "Mental health"]
         },
         {
           "name": "Pamela Denise Long",
           "party": "Republican",
           "bio": "Occupational therapist and political commentator.",
-          "priorities": ["Completing the border wall", "Restricting Ukraine aid", "Replacing income tax with a consumption tax", "Limiting abortion access", "Ending birthright citizenship"]
+          "priorities": ["Completing the border wall", "Restricting Ukraine aid", "Consumption tax replacing income tax", "Limiting abortion access", "Ending birthright citizenship"]
         },
         {
           "name": "Casey Chlebek",
           "party": "Republican",
-          "bio": "Polish immigrant who has lived in the U.S. since the 1960s and is a longtime IT professional.",
-          "priorities": ["Investing in robotics, AI, and quantum computing", "Cutting income taxes", "Overhauling immigration", "Reducing national debt", "Expanding vocational training"]
+          "bio": "Polish immigrant, U.S. resident since the 1960s, longtime IT professional.",
+          "priorities": ["AI, robotics, and quantum computing investment", "Cutting income taxes", "Immigration overhaul", "Reducing national debt", "Vocational training"]
         },
         {
           "name": "Jeannie Evans",
@@ -136,35 +138,84 @@
       ]
     },
     {
+      "id": "il-05",
+      "title": "U.S. House — Illinois 5th Congressional District",
+      "level": "Federal · Your District",
+      "description": "Ward 43 falls within IL-5, which covers the Far North Side (Lincoln Park, Lake View), northwest Chicago neighborhoods (Jefferson Park, Norwood Park), and northwest suburbs (Arlington Heights, Palatine). Cook PVI is D+19 — the primary is effectively the election. Incumbent Mike Quigley faces three Democratic challengers.",
+      "candidates": [
+        {
+          "name": "Mike Quigley",
+          "party": "Democratic",
+          "status": "Incumbent (17 years)",
+          "bio": "Has represented IL-5 since 2009, age 67. Previously Cook County Commissioner. The Chicago Tribune editorial board calls him 'a genial and effective congressman, both principled and pragmatic.' Has reportedly soft-launched a potential run for Chicago mayor if he wins re-election.",
+          "priorities": ["Healthcare access", "Gun control", "Ethics & accountability", "Bipartisan governance"],
+          "endorsements": ["Chicago Tribune editorial board"]
+        },
+        {
+          "name": "Matthew Conroy",
+          "party": "Democratic",
+          "bio": "37-year-old former financial advisor and learning-development professional from Chicago. Highlights housing and child care costs as the defining affordability crises facing families in the district.",
+          "priorities": ["Affordable housing", "Child care costs", "Working families"]
+        },
+        {
+          "name": "Ellen Corley",
+          "party": "Democratic",
+          "bio": "Researcher from the Near North Side. Focuses on government accountability and systemic reform of institutions that have failed ordinary people.",
+          "priorities": ["Government accountability", "Systemic reform"]
+        },
+        {
+          "name": "Anthony Michael Tamez",
+          "party": "Democratic",
+          "bio": "26-year-old Native American candidate born and raised in IL-5. Elected to the Chicago Police District Council for the 17th District. Has worked with progressive aldermen on initiatives supporting Native and Black communities, youth programs, and public safety. Running to bring generational change to Congress.",
+          "priorities": ["Generational change", "Youth programs", "Native & Black community issues", "Public safety reform"]
+        },
+        {
+          "name": "Tom Hanson",
+          "party": "Republican",
+          "bio": "Running in the Republican primary for Illinois' 5th Congressional District."
+        },
+        {
+          "name": "Kimball Ladien",
+          "party": "Republican",
+          "bio": "Running in the Republican primary for Illinois' 5th Congressional District."
+        },
+        {
+          "name": "Barry Wicker",
+          "party": "Republican",
+          "bio": "Running in the Republican primary for Illinois' 5th Congressional District."
+        }
+      ]
+    },
+    {
       "id": "governor",
       "title": "Governor / Lieutenant Governor",
-      "level": "State",
-      "description": "Illinois voters will elect a Governor and Lieutenant Governor (who run on a joint ticket) for a four-year term. The primary winner faces the opposite party nominee in the November 3, 2026 general election.",
+      "level": "State · Statewide",
+      "description": "Governor and Lieutenant Governor run as a joint ticket in Illinois primaries and the general election. A third Pritzker term would be the first by a Democratic governor in Illinois history.",
       "candidates": [
         {
           "name": "J.B. Pritzker / Christian Mitchell",
           "party": "Democratic",
-          "status": "Incumbent – Running Unopposed",
-          "bio": "J.B. Pritzker has served as Governor of Illinois since 2019. If re-elected, he would be the first Democratic governor to secure a third term in Illinois history. Running mate Christian Mitchell served as deputy governor (2019–2023) and as a state representative (2013–2019).",
-          "priorities": ["Economic development", "Reproductive rights", "Public education funding", "Criminal justice reform"]
+          "status": "Incumbent — Unopposed in primary",
+          "bio": "JB Pritzker has served as Governor since 2019. A billionaire heir to the Hyatt hotel fortune, he won in 2018 and 2022 by wide margins. Running mate Christian Mitchell served as deputy governor (2019–2023) and state representative (2013–2019). Pritzker is rumored to be eyeing a 2028 presidential run.",
+          "priorities": ["Economic development", "Reproductive rights", "Public education funding", "Resisting Trump administration"]
         },
         {
           "name": "Darren Bailey / Aaron Del Mar",
           "party": "Republican",
-          "status": "Frontrunner",
-          "bio": "Darren Bailey is a former state senator and farmer from downstate Illinois who lost to Pritzker in the 2022 gubernatorial race. Running mate Aaron Del Mar is a rising Republican figure in Cook County, selected to improve the ticket's appeal in the Chicago area.",
-          "priorities": ["Cutting state spending", "Tax relief", "Public safety", "Opposing progressive policies"]
+          "status": "Republican frontrunner",
+          "bio": "Darren Bailey is a downstate farmer and former state senator who lost to Pritzker in the 2022 general election by about 11 points. Running mate Aaron Del Mar is a Cook County Republican aimed at broadening the ticket's suburban appeal.",
+          "priorities": ["Cutting state spending", "Tax relief", "Public safety", "Rolling back progressive policies"]
         },
         {
           "name": "James Mendrick / Running Mate TBD",
           "party": "Republican",
-          "bio": "DuPage County Sheriff since 2018. Mendrick has partnered with the DuPage County Health Department to provide Medication-Assisted Treatment to inmates fighting opioid addiction.",
+          "bio": "DuPage County Sheriff since 2018. Campaigning on public safety and has partnered with the DuPage County Health Department to provide Medication-Assisted Treatment to inmates fighting opioid addiction.",
           "priorities": ["Public safety", "Opioid crisis response", "Law enforcement support"]
         },
         {
           "name": "Ted Dabrowski / Carrie Mendoza",
           "party": "Republican",
-          "bio": "Ted Dabrowski is the president of a conservative news and policy website. Running mate Carrie Mendoza is the leader of FAIR In Medicine.",
+          "bio": "Ted Dabrowski is president of a conservative news and policy website. Running mate Carrie Mendoza leads FAIR In Medicine.",
           "priorities": ["Fiscal conservatism", "Limited government", "Healthcare reform"]
         },
         {
@@ -175,271 +226,104 @@
       ]
     },
     {
-      "id": "il-09",
-      "title": "U.S. House – Illinois 9th Congressional District",
-      "level": "Federal",
-      "description": "Rep. Jan Schakowsky (D) is retiring after holding this seat since 1998. The district covers the Far North Side of Chicago (including West Ridge, Rogers Park, and Edgewater) and extends northwest to include parts of Lake and McHenry counties. This heavily Democratic district is effectively decided in the primary.",
+      "id": "il-senate-6",
+      "title": "Illinois State Senate — District 6",
+      "level": "State · Your District",
+      "description": "District 6 covers the lakefront Chicago neighborhoods of Lake View, Lincoln Park, and the Near North Side — Ward 43 is squarely in this district. Incumbent Sara Feigenholtz faces a progressive primary challenger for the first time in her 31-year career. The Chicago Tribune endorsed challenger Nick Uniejewski.",
       "candidates": [
         {
-          "name": "Daniel Biss",
+          "name": "Sara Feigenholtz",
           "party": "Democratic",
-          "status": "Frontrunner",
-          "bio": "Mayor of Evanston since 2021. Biss previously served as a state senator (2013–2019) and state representative (2011–2013) in the district, and ran for governor in 2018, finishing second in the Democratic primary behind JB Pritzker.",
-          "priorities": ["Federal funding for affordable housing", "Abolishing ICE", "Banning congressional stock trading", "Expanding Social Security"],
-          "fundraising": "$2.54 million raised",
-          "endorsements": ["Rep. Jan Schakowsky"]
+          "status": "Incumbent (31 years in office)",
+          "bio": "State Senator since 2020; before that, state representative of the 12th District from 1994. Age 69. Career focused on healthcare, social services, and LGBTQ+ rights. Backed by labor (Illinois Federation of Teachers, Teamsters) and establishment Democrats including Secretary of State Alexi Giannoulias.",
+          "priorities": ["Healthcare access", "Social services", "LGBTQ+ rights", "Labor rights"],
+          "fundraising": "$1.2 million cash on hand",
+          "endorsements": ["Illinois Federation of Teachers", "Teamsters", "Secretary of State Alexi Giannoulias", "Cook County Treasurer Maria Pappas"],
+          "note": "The Illinois Democratic Party spent $190,000 on mailers supporting Feigenholtz — the most it has spent on any General Assembly candidate since September 2025."
         },
         {
-          "name": "Kat Abughazaleh",
+          "name": "Nick Uniejewski",
           "party": "Democratic",
-          "status": "Frontrunner",
-          "bio": "Researcher and journalist known for video explainers debunking Fox News and right-wing media, having worked for Media Matters, Mother Jones, and Zeteo News. Her grandparents were survivors of the 1948 Palestinian mass displacement and immigrated to Chicago. Moved to Illinois in 2024.",
-          "priorities": ["Progressive foreign policy", "Fighting disinformation", "Working families"]
-        },
-        {
-          "name": "Laura Fine",
-          "party": "Democratic",
-          "status": "Frontrunner",
-          "bio": "Illinois State Senator representing parts of the Far North Side and north suburbs since 2018. Previously a state representative (2013–2019) for the 17th district. Her candidacy has drawn controversy due to campaign contributions from donors affiliated with AIPAC.",
-          "priorities": ["Healthcare access", "Education funding", "Economic security"]
-        },
-        {
-          "name": "Mike Simmons",
-          "party": "Democratic",
-          "bio": "Illinois State Senator — the first openly gay member of the Illinois Senate. His candidacy focuses on lived experience with poverty and housing insecurity.",
-          "priorities": ["Affordable housing", "LGBTQ+ rights", "Economic equity"]
-        },
-        {
-          "name": "Bushra Amiwala",
-          "party": "Democratic",
-          "bio": "28-year-old Skokie School District 73.5 board member. She has protested at the Broadview immigration detention center and was tear-gassed by ICE agents in September 2025.",
-          "priorities": ["Immigration rights", "Youth issues", "Community investment"]
-        },
-        {
-          "name": "Rocio Cleveland",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 9th Congressional District."
-        },
-        {
-          "name": "John Elleson",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 9th Congressional District."
-        },
-        {
-          "name": "Paul Friedman",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 9th Congressional District."
-        },
-        {
-          "name": "Mark Su",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 9th Congressional District."
+          "bio": "Policy analyst, formerly for the City of Chicago. Loyola University Chicago graduate (2017) with a DePaul graduate degree (2019). Would be the second openly gay state senator in Illinois history. Endorsed by North Side Ald. Leni Manaa-Hoppenworth (48th Ward) and former U.S. Rep. Marie Newman, for whom he served as campaign manager.",
+          "priorities": ["Housing supply (legalizing coach houses, zoning reform)", "Generational change", "Progressive reform"],
+          "fundraising": "$33,600 cash on hand",
+          "endorsements": ["Chicago Tribune editorial board", "Ald. Leni Manaa-Hoppenworth (48th Ward)", "Former Rep. Marie Newman", "Better Streets Chicago Action Fund", "Sunrise Movement Chicago", "Run for Something", "IVI-IPO"]
         }
       ]
     },
     {
-      "id": "il-07",
-      "title": "U.S. House – Illinois 7th Congressional District",
-      "level": "Federal",
-      "description": "Rep. Danny Davis (D) is retiring after 15 consecutive terms. The district covers Chicago's West Side, Downtown, the South Loop, parts of the South Side, and suburban communities including Oak Park, Maywood, and Forest Park. This heavily Democratic district is effectively decided in the primary.",
+      "id": "il-house-12",
+      "title": "Illinois State House — District 12",
+      "level": "State · Your District",
+      "description": "District 12 covers the northern lakefront neighborhoods of Gold Coast, Old Town, Lincoln Park, and East Lakeview — Ward 43 is in this district. Incumbent Margaret Croke is leaving to run for state comptroller, making this an open seat. Four Democrats are competing in a relatively well-funded primary.",
       "candidates": [
         {
-          "name": "La Shawn Ford",
+          "name": "Paul Kendrick",
           "party": "Democratic",
-          "status": "Frontrunner",
-          "bio": "West Side State Representative since 2007. Ford ran for Chicago mayor in 2019. He is the candidate endorsed by retiring Rep. Danny Davis.",
-          "priorities": ["West Side economic development", "Criminal justice reform", "Education"],
-          "endorsements": ["Rep. Danny Davis"]
+          "bio": "Former Barack Obama campaign and administration official. Has held leadership roles at nonprofits and the local Indivisible Chicago chapter. Endorsed by incumbent Rep. Margaret Croke and State Sen. Sara Feigenholtz. One of four legislative candidates statewide benefiting from a PAC funded by Meta (Facebook/Instagram parent).",
+          "priorities": ["Progressive governance", "Community organizing", "Accountability"],
+          "fundraising": "~$175,000 cash on hand",
+          "endorsements": ["Rep. Margaret Croke", "State Sen. Sara Feigenholtz", "Chicago Tribune editorial board", "43rd Ward Democrats"]
         },
         {
-          "name": "Melissa Conyears-Ervin",
+          "name": "Karim Lakhani",
           "party": "Democratic",
-          "status": "Frontrunner",
-          "bio": "Chicago City Treasurer serving her second term, formerly a state representative. She finished as runner-up to Davis in the 2024 Democratic primary.",
-          "priorities": ["Economic equity", "Financial literacy", "Community investment"]
+          "bio": "Chief development officer for his family's Chicago-area hotel business. Campaign largely self-funded with family money. Endorsed by the Chicago Teachers Union (CTU).",
+          "priorities": ["Education", "Economic development", "Community investment"],
+          "fundraising": "~$426,000 cash on hand (leading the field)",
+          "endorsements": ["Chicago Teachers Union (CTU)"]
         },
         {
-          "name": "Kina Collins",
+          "name": "Mac LeBuhn",
           "party": "Democratic",
-          "bio": "Progressive organizer from Chicago's Austin neighborhood running for the 4th time since 2018. Former executive director of One Aim Illinois, the state's largest gun violence prevention nonprofit.",
-          "priorities": ["Gun violence prevention", "Progressive policies", "Community organizing"]
+          "bio": "Former legal counsel and policy advisor to Mayor Lori Lightfoot. Emphasizes ethics reform and experience in city government. Endorsed by former Mayor Lightfoot, Chicago Growth Project, and several good-government aldermen.",
+          "priorities": ["Ethics reform", "Government accountability", "City services"],
+          "fundraising": "~$145,000 cash on hand",
+          "endorsements": ["Former Mayor Lori Lightfoot", "Chicago Growth Project"]
         },
         {
-          "name": "Jason Friedman",
+          "name": "Litcy Kurisinkal",
           "party": "Democratic",
-          "bio": "Owner and former president of Friedman Properties, a major River North real estate firm. Previously worked under Rahm Emanuel in the Clinton administration.",
-          "priorities": ["Economic development", "Cost of living", "Public safety"],
-          "fundraising": "$1.8 million raised"
+          "bio": "Biden 2020 campaign alumna. Attended protests of ICE operations at the Broadview detention facility in February 2026. Running the most grassroots campaign in the field.",
+          "priorities": ["Immigration rights", "Progressive policies", "Community action"],
+          "fundraising": "~$32,000 cash on hand"
         },
         {
-          "name": "Richard Boykin",
-          "party": "Democratic",
-          "bio": "Lawyer who served on the Cook County Board of Commissioners (2014–2018) and previously worked as Rep. Danny Davis's chief of staff.",
-          "priorities": ["Lowering the cost of living", "Public safety"]
-        },
-        {
-          "name": "Anthony Driver",
-          "party": "Democratic",
-          "bio": "Executive director of the Service Employees International Union (SEIU) Illinois State Council. Was the first president of the Community Commission for Public Safety and Accountability.",
-          "priorities": ["Labor rights", "Public safety accountability", "Working families"]
-        },
-        {
-          "name": "Thomas Fisher",
-          "party": "Democratic",
-          "bio": "Emergency physician at the University of Chicago Medical Center. Served as a White House Fellow under President Obama during the rollout of the Affordable Care Act.",
-          "priorities": ["Healthcare access", "ACA expansion", "Public health"]
-        },
-        {
-          "name": "David Ehrlich",
-          "party": "Democratic",
-          "bio": "Adjunct lecturer at UIC's College of Urban Planning and Public Affairs. Previously a senior analyst for the U.S. Government Accountability Office.",
-          "priorities": ["Urban planning", "Government accountability", "Policy research"]
-        },
-        {
-          "name": "Anabel Mendoza",
-          "party": "Democratic",
-          "bio": "At 27, the youngest candidate in the race. Immigrant rights organizer with the youth-led nonprofit United We Dream.",
-          "priorities": ["Immigration rights", "Youth issues", "Progressive reform"]
-        },
-        {
-          "name": "Rory Hoskins",
-          "party": "Democratic",
-          "bio": "First Black mayor of Forest Park, serving his second term after two terms as a commissioner.",
-          "priorities": ["Local governance", "Community development", "Representation"]
-        },
-        {
-          "name": "Reed Showalter",
-          "party": "Democratic",
-          "bio": "Former Federal Trade Commission attorney, Department of Justice counsel, and White House National Economic Council adviser. Left federal service in protest of Trump administration policies.",
-          "priorities": ["Consumer protection", "Economic fairness", "Rule of law"]
-        },
-        {
-          "name": "Jazmin Robinson",
-          "party": "Democratic",
-          "bio": "Corporate human resources worker and improv performer. Running to end big-money influence in politics.",
-          "priorities": ["Campaign finance reform", "Working people"]
-        },
-        {
-          "name": "Felix Tello",
-          "party": "Democratic",
-          "bio": "Running in the Democratic primary for Illinois' 7th Congressional District."
-        },
-        {
-          "name": "Chad Koppie",
+          "name": "Justin Kumar",
           "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 7th Congressional District."
-        },
-        {
-          "name": "Patricia 'P Rae' Easley",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 7th Congressional District."
-        }
-      ]
-    },
-    {
-      "id": "il-08",
-      "title": "U.S. House – Illinois 8th Congressional District",
-      "level": "Federal",
-      "description": "Rep. Raja Krishnamoorthi is giving up this seat to run for U.S. Senate, making it open for the first time in a decade. The district includes the Far Northwest Side of Chicago near O'Hare Airport and northwest suburbs including Schaumburg, Hoffman Estates, Elgin, and Geneva.",
-      "candidates": [
-        {
-          "name": "Melissa Bean",
-          "party": "Democratic",
-          "status": "Frontrunner",
-          "bio": "Former three-term U.S. Representative for the 8th District before losing to conservative Joe Walsh in 2010. Since leaving Congress she has held senior private-sector roles, most recently as CEO of Mesirow's Wealth Management and previously as Chairman of JPMorgan Chase's Midwest operations.",
-          "priorities": ["Business-friendly policies", "Bipartisan legislation", "Economic growth"],
-          "endorsements": ["Chicago Tribune editorial board"]
-        },
-        {
-          "name": "Junaid Ahmed",
-          "party": "Democratic",
-          "bio": "Tech entrepreneur who unsuccessfully challenged Krishnamoorthi in the 2022 primary. Refuses to take any PAC contributions. Considers himself the most progressive candidate in the race, influenced by Bernie Sanders.",
-          "priorities": ["Progressive policies", "No PAC money", "Working families"]
-        },
-        {
-          "name": "Yasmeen Bankole",
-          "party": "Democratic",
-          "bio": "Hanover Park village trustee who has worked for both Rep. Krishnamoorthi and Sen. Dick Durbin.",
-          "priorities": ["Community representation", "Local governance"]
-        },
-        {
-          "name": "Sanjyot Dunung",
-          "party": "Democratic",
-          "bio": "Runs a global education company. Served on a foreign policy working group under President Biden.",
-          "priorities": ["Global education", "Foreign policy", "Economic opportunity"]
-        },
-        {
-          "name": "Neil Khot",
-          "party": "Democratic",
-          "bio": "Tech services business owner and first-generation Indian immigrant.",
-          "priorities": ["Small business", "Technology", "Immigrant communities"]
-        },
-        {
-          "name": "Kevin Morrison",
-          "party": "Democratic",
-          "bio": "Two-term Cook County Commissioner and the first openly gay member of the Cook County Board.",
-          "priorities": ["LGBTQ+ rights", "Cook County services", "Healthcare"]
-        },
-        {
-          "name": "Dan Tully",
-          "party": "Democratic",
-          "bio": "Former judge advocate in the U.S. Army Reserve and foreign assistance worker for the Department of Commerce. Left federal service in protest of Trump administration policies.",
-          "priorities": ["Veterans affairs", "Rule of law", "Foreign assistance"]
-        },
-        {
-          "name": "Ryan Vetticad",
-          "party": "Democratic",
-          "bio": "Refuses to take PAC money. Running in the Democratic primary for Illinois' 8th Congressional District.",
-          "priorities": ["Campaign finance reform"]
-        },
-        {
-          "name": "Kevin Ake",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 8th Congressional District."
-        },
-        {
-          "name": "Jennifer Davis",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 8th Congressional District.",
-          "endorsements": ["Chicago Tribune editorial board"]
-        },
-        {
-          "name": "Herbert Hebein",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 8th Congressional District."
-        },
-        {
-          "name": "Mark Rice",
-          "party": "Republican",
-          "bio": "Running in the Republican primary for Illinois' 8th Congressional District."
+          "bio": "Running in the Republican primary for Illinois House District 12."
         }
       ]
     },
     {
       "id": "il-comptroller",
       "title": "Illinois Comptroller",
-      "level": "State",
-      "description": "The Illinois Comptroller manages the state's finances, signs off on state payments, and provides financial oversight. Incumbent Susana Mendoza is not seeking re-election.",
+      "level": "State · Statewide",
+      "description": "The Comptroller manages the state's finances, signs off on state payments, and provides financial oversight. Incumbent Susana Mendoza is not seeking re-election. Note: Democratic candidate Margaret Croke is currently the IL-12 state representative (the same seat being contested above).",
       "candidates": [
         {
           "name": "Margaret Croke",
           "party": "Democratic",
-          "bio": "Running in the Democratic primary for Illinois Comptroller."
+          "bio": "Illinois State Representative for District 12 (Lincoln Park, Old Town, Gold Coast) since 2021 — the same seat now being contested in the primary above. Running for comptroller rather than seeking re-election to the House.",
+          "priorities": ["Financial oversight", "State fiscal management"]
         },
         {
           "name": "Stephanie Kifowit",
           "party": "Democratic",
-          "bio": "Running in the Democratic primary for Illinois Comptroller."
+          "bio": "State Representative for Aurora-area District 84 since 2013. Marine Corps veteran. Known for her advocacy on healthcare and veterans' issues.",
+          "priorities": ["Veterans issues", "Healthcare", "Fiscal accountability"]
         },
         {
           "name": "Holly Kim",
           "party": "Democratic",
-          "bio": "Running in the Democratic primary for Illinois Comptroller."
+          "bio": "Lake County Treasurer and Collector since 2018. First Korean American elected to countywide office in Illinois history.",
+          "priorities": ["Fiscal transparency", "Public finance reform"]
         },
         {
           "name": "Karina Villa",
           "party": "Democratic",
-          "bio": "Running in the Democratic primary for Illinois Comptroller."
+          "bio": "Illinois State Senator for the 25th District (west suburbs) since 2019. Known for environmental and education legislation.",
+          "priorities": ["Environmental policy", "Education", "Working families"]
         },
         {
           "name": "Bryan Drew",
@@ -451,15 +335,15 @@
     {
       "id": "il-treasurer",
       "title": "Illinois Treasurer",
-      "level": "State",
-      "description": "The Illinois Treasurer manages and invests the state's funds and oversees college savings and financial literacy programs.",
+      "level": "State · Statewide",
+      "description": "The Treasurer manages and invests state funds and oversees college savings (Bright Start/Bright Directions) and financial literacy programs.",
       "candidates": [
         {
           "name": "Mike Frerichs",
           "party": "Democratic",
-          "status": "Incumbent",
-          "bio": "Incumbent Illinois Treasurer seeking re-election. Frerichs has served as state treasurer since 2015, focusing on financial inclusion, college savings programs, and returning unclaimed property to Illinois residents.",
-          "priorities": ["Financial literacy", "College savings", "Returning unclaimed property"]
+          "status": "Incumbent — Unopposed in Democratic primary",
+          "bio": "Illinois Treasurer since 2015. Former Champaign County state senator. Has expanded the Bright Start college savings program, returned record amounts of unclaimed property to residents, and launched financial inclusion initiatives.",
+          "priorities": ["College savings", "Returning unclaimed property to residents", "Financial literacy", "Inclusive investing"]
         },
         {
           "name": "Max Rice",
@@ -476,41 +360,47 @@
     {
       "id": "cook-county-board-president",
       "title": "Cook County Board President",
-      "level": "County",
-      "description": "The Cook County Board President oversees county government, the county budget, and county services for over 5 million residents. This race is only on the ballot for Cook County voters.",
+      "level": "County · Cook County",
+      "description": "The Board President is the chief executive of Cook County, overseeing the county jail, court system, public health system (including Stroger Hospital), forest preserves, and a budget covering 20,000+ employees. This is a close, competitive race.",
       "candidates": [
         {
           "name": "Toni Preckwinkle",
           "party": "Democratic",
-          "status": "Incumbent",
-          "bio": "Cook County Board President since 2010, seeking a fifth term. Preckwinkle previously served as Chicago Alderman for the 4th Ward for 19 years. She has focused on criminal justice reform, fiscal responsibility, and expanding social services.",
-          "priorities": ["Criminal justice reform", "Fiscal responsibility", "Social services"]
+          "status": "Incumbent (since 2010) — 5th term bid",
+          "bio": "First Black woman elected Cook County Board President. Before that, 4th Ward alderman for nearly 20 years and a high school history teacher for 10 years. Has overseen four bond rating upgrades, forgiven $600M in medical debt for 500K+ residents, implemented major criminal justice reforms, and provided guaranteed income to 3,000+ households. March 17 is her 79th birthday.",
+          "priorities": ["Criminal justice reform", "Fiscal stability without new taxes", "Public health", "Fighting Trump-era federal cuts"],
+          "endorsements": ["Cook County Democratic Party (individual members)"]
         },
         {
           "name": "Brendan Reilly",
           "party": "Democratic",
-          "bio": "Longtime Chicago Alderman for the 42nd Ward (River North/Streeterville), challenging the incumbent Preckwinkle for the Democratic nomination.",
-          "priorities": ["Economic development", "Public safety", "Accountability"]
+          "bio": "42nd Ward alderman since 2007, representing downtown Chicago (Loop, River North, Streeterville, Magnificent Mile). Age 54. Former Illinois House staffer and AT&T executive. Close ally of Mayor Rahm Emanuel, later critic of Mayor Lightfoot, and frequent critic of Mayor Brandon Johnson. Self-described independent and pro-business voice.",
+          "priorities": ["Property tax system accountability", "Affordability", "Pro-business development", "Generational change in county leadership"],
+          "note": "Preckwinkle has tied Reilly to Trump; Reilly says the Trump campaign donations he received were donated to charity."
         }
       ]
     },
     {
       "id": "cook-county-assessor",
       "title": "Cook County Assessor",
-      "level": "County",
-      "description": "The Cook County Assessor determines the taxable value of all real property in the county — directly affecting property tax bills. This race is only on the ballot for Cook County voters.",
+      "level": "County · Cook County",
+      "description": "The Assessor sets the taxable value of all 1.8 million parcels in Cook County, directly determining property tax bills. This race pits a reform incumbent against a challenger with the Cook County Democratic Party organization's backing.",
       "candidates": [
         {
           "name": "Fritz Kaegi",
           "party": "Democratic",
-          "status": "Incumbent",
-          "bio": "Cook County Assessor since 2018, seeking a third term. Kaegi has pushed to modernize the assessment process and eliminate disparities that historically over-assessed lower-value residential properties while under-assessing commercial properties.",
-          "priorities": ["Assessment equity", "Transparency", "Property tax fairness"]
+          "status": "Incumbent (since 2018) — 3rd term bid",
+          "bio": "Cook County Assessor since 2018. Former financial analyst who ran on a reform platform of eliminating historic disparities that over-assessed lower-value residential properties while under-assessing commercial properties. Has clashed with the Cook County Democratic organization throughout his tenure.",
+          "priorities": ["Assessment equity", "Transparency", "Property tax fairness", "Modernizing assessment data"],
+          "note": "The Cook County Democratic Party endorsed his challenger, Pat Hynes, rather than the incumbent."
         },
         {
-          "name": "Former employee (name TBD)",
+          "name": "Pat Hynes",
           "party": "Democratic",
-          "bio": "A former employee of the Assessor's office is challenging incumbent Fritz Kaegi in the Democratic primary."
+          "bio": "Lyons Township Assessor and firefighter/EMT with the Western Springs Fire Department. Spent 23 years in the Cook County Assessor's office as a residential field inspector (including three under Kaegi). Nephew of former five-term Cook County Assessor and Illinois Senate President Thomas Hynes.",
+          "priorities": ["Using building permit data to improve accuracy", "Fixing valuation process", "Reducing property tax burden"],
+          "endorsements": ["Cook County Democratic Party"],
+          "note": "Has taken nearly $70,000 from property tax attorneys. Real estate industry donors favor Hynes over Kaegi."
         }
       ]
     }

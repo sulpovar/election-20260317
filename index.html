@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Illinois Primary Election – March 17, 2026</title>
+  <title>March 17, 2026 Primary Ballot — Ward 43, Precinct 16 (Chicago)</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -107,6 +107,24 @@
 
     /* ── Main layout ── */
     main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+
+    /* ── Your district highlight ── */
+    .race-card.your-district .race-header {
+      background: #f0f7ff;
+      border-left: 4px solid var(--accent);
+    }
+    .your-district-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      background: #dbeafe;
+      color: #1d4ed8;
+      border-radius: 999px;
+      padding: .15rem .6rem;
+      font-size: .72rem;
+      font-weight: 700;
+      margin-top: .35rem;
+    }
 
     /* ── Race card ── */
     .race-card {
@@ -280,9 +298,11 @@
   <div class="flag">🗳️</div>
   <h1>Illinois General Primary Election</h1>
   <p><strong>Tuesday, March 17, 2026</strong> &nbsp;·&nbsp; Polls open 6:00 AM – 7:00 PM</p>
+  <p style="margin-top:.4rem;font-size:.9rem;opacity:.9">Ward 43, Precinct 16 &nbsp;·&nbsp; Lincoln Park, Chicago</p>
   <div class="note">
-    To receive a partisan ballot you must declare a party (Democratic or Republican) when you vote.
-    An Independent ballot contains only referenda.
+    To receive a partisan ballot you must declare a party (Democratic, Republican, or Libertarian) when you vote.
+    An Independent ballot contains only referenda. &nbsp;|&nbsp;
+    Early voting: Lincoln Park Branch Library, 1150 W. Fullerton Ave.
   </div>
 </header>
 
@@ -349,8 +369,9 @@
     main.querySelectorAll('.race-card').forEach(el => el.remove());
 
     data.races.forEach(race => {
+      const isYourDistrict = race.level.includes('Your District');
       const card = document.createElement('div');
-      card.className = 'race-card';
+      card.className = 'race-card' + (isYourDistrict ? ' your-district' : '');
       card.dataset.raceId = race.id;
 
       // Header
@@ -358,9 +379,10 @@
         <div class="race-header">
           <div class="race-header-left">
             <h2>${escHtml(race.title)}</h2>
-            <p>${escHtml(race.description)}</p>
+            ${isYourDistrict ? '<span class="your-district-badge">&#128205; Your district</span>' : ''}
+            <p style="margin-top:.35rem">${escHtml(race.description)}</p>
           </div>
-          <span class="level-badge">${escHtml(race.level)}</span>
+          <span class="level-badge">${escHtml(race.level.replace(' · Your District',''))}</span>
         </div>
         <div class="candidates-grid" id="grid-${race.id}"></div>
       `;
@@ -413,6 +435,14 @@
           inner += `
             <div class="fundraising-section">
               <strong>Fundraising:</strong> ${escHtml(c.fundraising)}
+            </div>
+          `;
+        }
+
+        if (c.note) {
+          inner += `
+            <div style="margin-top:.45rem;font-size:.78rem;background:#fffbeb;border:1px solid #fcd34d;border-radius:6px;padding:.35rem .55rem;color:#78350f;">
+              ${escHtml(c.note)}
             </div>
           `;
         }
