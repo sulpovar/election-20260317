@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Illinois Primary Election – March 17, 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dem: #1a6fc4;
+      --dem-bg: #e8f0fb;
+      --rep: #c42a1a;
+      --rep-bg: #fbe8e8;
+      --ind: #5a5a5a;
+      --ind-bg: #f0f0f0;
+      --surface: #ffffff;
+      --bg: #f4f6f9;
+      --border: #dde2ea;
+      --text: #1a1f2e;
+      --text-muted: #5a6475;
+      --accent: #2563eb;
+      --radius: 10px;
+      --shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a3a6e 0%, #2563eb 100%);
+      color: #fff;
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header .flag {
+      font-size: 2.5rem;
+      margin-bottom: .5rem;
+    }
+    header h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: .25rem;
+    }
+    header p {
+      opacity: .85;
+      font-size: .95rem;
+    }
+    header .note {
+      margin-top: 1rem;
+      background: rgba(255,255,255,.15);
+      border-radius: var(--radius);
+      padding: .75rem 1rem;
+      font-size: .85rem;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── Toolbar ── */
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      align-items: center;
+    }
+    .toolbar label { font-size: .85rem; font-weight: 600; color: var(--text-muted); white-space: nowrap; }
+    .filter-group { display: flex; gap: .4rem; flex-wrap: wrap; flex: 1; }
+    .filter-btn {
+      border: 2px solid transparent;
+      border-radius: 999px;
+      padding: .3rem .85rem;
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+      background: var(--bg);
+      color: var(--text-muted);
+    }
+    .filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .filter-btn.dem.active  { background: var(--dem);  border-color: var(--dem); }
+    .filter-btn.rep.active  { background: var(--rep);  border-color: var(--rep); }
+    .filter-btn.ind.active  { background: var(--ind);  border-color: var(--ind); }
+
+    .search-box {
+      padding: .35rem .75rem;
+      border: 1.5px solid var(--border);
+      border-radius: 999px;
+      font-size: .85rem;
+      outline: none;
+      width: 200px;
+    }
+    .search-box:focus { border-color: var(--accent); }
+
+    /* ── Main layout ── */
+    main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+
+    /* ── Race card ── */
+    .race-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .race-card.hidden { display: none; }
+
+    .race-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      background: #fafbff;
+    }
+    .race-header-left h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: .15rem;
+    }
+    .race-header-left p {
+      font-size: .85rem;
+      color: var(--text-muted);
+      max-width: 580px;
+    }
+    .level-badge {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: .2rem .65rem;
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    /* ── Candidate grid ── */
+    .candidates-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 0;
+    }
+
+    /* ── Candidate card ── */
+    .candidate-card {
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.1rem;
+      transition: background .12s;
+      position: relative;
+    }
+    .candidate-card:last-child { border-right: none; }
+    .candidate-card.hidden-candidate { display: none; }
+    .candidate-card:hover { background: #f7f9ff; }
+
+    .candidate-top {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      margin-bottom: .5rem;
+    }
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      color: #fff;
+    }
+    .avatar.dem { background: var(--dem); }
+    .avatar.rep { background: var(--rep); }
+    .avatar.ind { background: var(--ind); }
+
+    .candidate-name { font-weight: 700; font-size: .95rem; line-height: 1.3; }
+    .candidate-meta { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .3rem; }
+
+    .party-tag {
+      display: inline-block;
+      border-radius: 999px;
+      padding: .1rem .55rem;
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+    .party-tag.dem { background: var(--dem-bg); color: var(--dem); }
+    .party-tag.rep { background: var(--rep-bg); color: var(--rep); }
+    .party-tag.ind { background: var(--ind-bg); color: var(--ind); }
+
+    .status-tag {
+      display: inline-block;
+      background: #fff8e1;
+      color: #8a6d00;
+      border-radius: 999px;
+      padding: .1rem .55rem;
+      font-size: .72rem;
+      font-weight: 600;
+    }
+
+    .candidate-bio {
+      font-size: .83rem;
+      color: var(--text-muted);
+      margin-bottom: .5rem;
+    }
+
+    .priorities-section { margin-top: .4rem; }
+    .priorities-label { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); margin-bottom: .3rem; }
+    .priorities-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .25rem;
+    }
+    .priority-chip {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: .15rem .45rem;
+      font-size: .72rem;
+      color: var(--text-muted);
+    }
+
+    .endorsements-section { margin-top: .45rem; font-size: .78rem; color: var(--text-muted); }
+    .endorsements-section strong { color: var(--text); }
+
+    .fundraising-section { margin-top: .35rem; font-size: .78rem; color: var(--text-muted); }
+    .fundraising-section strong { color: var(--text); }
+
+    /* ── No results ── */
+    .no-results {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 3rem 1rem;
+      display: none;
+    }
+    .no-results.visible { display: block; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: .8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .candidates-grid { grid-template-columns: 1fr; }
+      .candidate-card { border-right: none; }
+      .toolbar { flex-direction: column; align-items: flex-start; }
+      .search-box { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="flag">🗳️</div>
+  <h1>Illinois General Primary Election</h1>
+  <p><strong>Tuesday, March 17, 2026</strong> &nbsp;·&nbsp; Polls open 6:00 AM – 7:00 PM</p>
+  <div class="note">
+    To receive a partisan ballot you must declare a party (Democratic or Republican) when you vote.
+    An Independent ballot contains only referenda.
+  </div>
+</header>
+
+<div class="toolbar">
+  <label>Filter by party:</label>
+  <div class="filter-group" id="filterGroup">
+    <button class="filter-btn active" data-party="all">All Candidates</button>
+    <button class="filter-btn dem" data-party="Democratic">Democrat</button>
+    <button class="filter-btn rep" data-party="Republican">Republican</button>
+    <button class="filter-btn ind" data-party="Independent">Independent</button>
+  </div>
+  <input class="search-box" type="search" id="searchBox" placeholder="Search candidates…" />
+</div>
+
+<main id="main">
+  <div class="no-results" id="noResults">No candidates match your search.</div>
+</main>
+
+<footer>
+  <p>
+    Data sourced from
+    <a href="https://ballotpedia.org/Illinois_elections,_2026" target="_blank">Ballotpedia</a>,
+    <a href="https://chicago.suntimes.com/elections/2026/graphics/voter-guide-primary-election-illinois/" target="_blank">Chicago Sun-Times Voter Guide</a>,
+    <a href="https://news.wttw.com/elections/voters-guide/2026-primary" target="_blank">WTTW Voter Guide</a>, and
+    <a href="https://www.ballotready.org/elections/illinois-primary-election-b33c65c6-b94c-4812-ac6c-e1147ef04bf2" target="_blank">BallotReady</a>.
+    For your personalized sample ballot, visit your county clerk's website.
+  </p>
+</footer>
+
+<script>
+(async () => {
+  const main = document.getElementById('main');
+  const noResults = document.getElementById('noResults');
+  const filterGroup = document.getElementById('filterGroup');
+  const searchBox = document.getElementById('searchBox');
+
+  let activeParty = 'all';
+  let searchTerm = '';
+
+  // Load data
+  const data = await fetch('ballot.json').then(r => r.json());
+
+  // ── Helpers ──────────────────────────────────────────────
+  function partyClass(party) {
+    if (party === 'Democratic') return 'dem';
+    if (party === 'Republican') return 'rep';
+    return 'ind';
+  }
+
+  function initials(name) {
+    return name.split(/[\s\/]+/).map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  }
+
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  // ── Render ────────────────────────────────────────────────
+  function renderBallot() {
+    // Remove old race cards (but keep no-results)
+    main.querySelectorAll('.race-card').forEach(el => el.remove());
+
+    data.races.forEach(race => {
+      const card = document.createElement('div');
+      card.className = 'race-card';
+      card.dataset.raceId = race.id;
+
+      // Header
+      card.innerHTML = `
+        <div class="race-header">
+          <div class="race-header-left">
+            <h2>${escHtml(race.title)}</h2>
+            <p>${escHtml(race.description)}</p>
+          </div>
+          <span class="level-badge">${escHtml(race.level)}</span>
+        </div>
+        <div class="candidates-grid" id="grid-${race.id}"></div>
+      `;
+
+      main.insertBefore(card, noResults);
+
+      const grid = card.querySelector(`#grid-${race.id}`);
+
+      race.candidates.forEach(c => {
+        const pc = partyClass(c.party);
+        const cell = document.createElement('div');
+        cell.className = 'candidate-card';
+        cell.dataset.party = c.party;
+        cell.dataset.name = c.name.toLowerCase();
+
+        let inner = `
+          <div class="candidate-top">
+            <div class="avatar ${pc}">${escHtml(initials(c.name))}</div>
+            <div>
+              <div class="candidate-name">${escHtml(c.name)}</div>
+              <div class="candidate-meta">
+                <span class="party-tag ${pc}">${escHtml(c.party)}</span>
+                ${c.status ? `<span class="status-tag">${escHtml(c.status)}</span>` : ''}
+              </div>
+            </div>
+          </div>
+          <div class="candidate-bio">${escHtml(c.bio)}</div>
+        `;
+
+        if (c.priorities && c.priorities.length) {
+          inner += `
+            <div class="priorities-section">
+              <div class="priorities-label">Key Priorities</div>
+              <div class="priorities-list">
+                ${c.priorities.map(p => `<span class="priority-chip">${escHtml(p)}</span>`).join('')}
+              </div>
+            </div>
+          `;
+        }
+
+        if (c.endorsements && c.endorsements.length) {
+          inner += `
+            <div class="endorsements-section">
+              <strong>Endorsed by:</strong> ${escHtml(c.endorsements.join(', '))}
+            </div>
+          `;
+        }
+
+        if (c.fundraising) {
+          inner += `
+            <div class="fundraising-section">
+              <strong>Fundraising:</strong> ${escHtml(c.fundraising)}
+            </div>
+          `;
+        }
+
+        cell.innerHTML = inner;
+        grid.appendChild(cell);
+      });
+    });
+
+    applyFilters();
+  }
+
+  // ── Filter ────────────────────────────────────────────────
+  function applyFilters() {
+    let anyVisible = false;
+
+    document.querySelectorAll('.race-card').forEach(card => {
+      const cells = card.querySelectorAll('.candidate-card');
+      let raceVisible = false;
+
+      cells.forEach(cell => {
+        const partyMatch = activeParty === 'all' || cell.dataset.party === activeParty;
+        const nameMatch = !searchTerm || cell.dataset.name.includes(searchTerm);
+        const visible = partyMatch && nameMatch;
+        cell.classList.toggle('hidden-candidate', !visible);
+        if (visible) raceVisible = true;
+      });
+
+      card.classList.toggle('hidden', !raceVisible);
+      if (raceVisible) anyVisible = true;
+    });
+
+    noResults.classList.toggle('visible', !anyVisible);
+  }
+
+  // ── Events ────────────────────────────────────────────────
+  filterGroup.addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    activeParty = btn.dataset.party;
+    filterGroup.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilters();
+  });
+
+  searchBox.addEventListener('input', e => {
+    searchTerm = e.target.value.toLowerCase().trim();
+    applyFilters();
+  });
+
+  // ── Init ──────────────────────────────────────────────────
+  renderBallot();
+})();
+</script>
+</body>
+</html>
