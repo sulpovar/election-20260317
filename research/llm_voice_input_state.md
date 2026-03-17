@@ -2,6 +2,11 @@
 
 _Date prepared: 2026-03-17 in an environment without outbound web access. This briefing reflects a synthesis of established public information up to mid-2024 and likely trajectories._
 
+
+## Document revision
+
+- **Revision 2 (2026-03-17):** Added project-level watchlists (commercial + open source), feasibility/progression tracking, and a claim-verification template for press releases/interviews/prospectus.
+
 ## Executive take
 
 LLM voice systems have moved from **pipeline assistants** (ASR -> text LLM -> TTS) to **real-time multimodal conversation stacks** that optimize latency, interruption handling, and prosody. The strongest products are no longer judged only by transcription accuracy; they are judged by:
@@ -132,6 +137,73 @@ Because this environment could not fetch live pages, validate against these sour
 3. Independent evaluations and engineering writeups (benchmarks, contact-center case studies).
 4. Regulatory and policy updates related to synthetic voice disclosure and anti-fraud controls.
 5. Research repos/papers for open real-time speech dialogue projects (including Kyutai and comparable labs).
+
+
+
+## Individual projects to follow (commercial + open source)
+
+> Ratings are practical “follow priority” scores (1-5) for teams building or buying voice AI. They are not investment advice.
+
+### Commercial projects
+
+| Project | Follow rating | Duration/status | Accomplishments to date | Promise (what they claim / direction) | 12-24 month projection | Feasibility (my estimate) | Progression signals to watch |
+|---|---:|---|---|---|---|---|---|
+| OpenAI Realtime voice stack (ChatGPT Voice, Realtime API direction) | 5/5 | Publicly visible since 2023-2024 voice expansion; currently scaling | Demonstrated low-latency conversational UX and broad developer mindshare | Near-human turn-taking and broader agentic voice workflows | Likely deeper tool-calling + enterprise-grade controls + wider language polish | **High** technically; **Medium** on safety/governance at scale | p95 latency disclosures, enterprise policy features, independent long-session evals |
+| Google Gemini Live / Astra track | 5/5 | 2024-present productization arc | Strong multimodal demos (voice + visual context) and distribution leverage | Persistent “ambient assistant” with live context grounding | Tight Android integration, better memory/continuity, more on-device pathways | **High** due to infra/distribution; execution risk in consistency | Rollout breadth by region/device, failure-mode transparency |
+| Microsoft Azure Speech + Copilot voice integrations | 4.5/5 | Multi-year speech platform, LLM overlay accelerated in 2023-2025 | Mature enterprise controls, compliance posture, contact-center pathways | Reliable enterprise voice copilots with governance | Strong B2B traction where audit/compliance matters | **High** for enterprise adoption, **Medium** for consumer delight | Reference architectures, regulated-industry wins, measurable agent ROI |
+| Amazon Alexa LLM transition (Alexa+) | 4/5 | Long-running assistant platform; major LLM transition period | Massive installed base and far-field device expertise | More natural home assistant with broader conversational competence | If reliability rises, could regain leadership in household voice UX | **Medium-High** (distribution advantage, but quality bar is high) | Real household benchmark data, multi-user disambiguation performance |
+| ElevenLabs voice platform | 4.5/5 | Fast-growth TTS era 2023+ | High perceived naturalness and developer adoption for synthetic voice | Controllable expressive voice + enterprise-safe deployment | Continued expansion into end-to-end conversational voice tooling | **High** for TTS; **Medium** for full assistant stack | Watermarking/provenance controls, enterprise procurement wins |
+| Anthropic + partner ecosystem voice layer | 3.5/5 | LLM-first company, voice via ecosystem pattern | Strong model quality reputation in text reasoning and safety discourse | Safer assistant behavior carried into voice interfaces via partners | Likely strong in enterprise partner channels, less in first-party voice UX | **Medium** | Clear first-party voice strategy vs partner-only approach |
+| NVIDIA speech/agent stack (Riva + NIM ecosystem) | 4/5 | Multi-year speech infra + current AI platform push | Hardware/software optimization and enterprise deployment tooling | Low-latency, optimized voice AI pipelines for enterprises | Growth in on-prem/hybrid deployments where latency/privacy matter | **High** in infra-heavy enterprises | Real deployment case studies with latency + cost metrics |
+| Apple on-device Siri/LLM transition (observed direction) | 4/5 | Multi-year assistant history; transition underway | Best-in-class on-device constraints and privacy brand | Private, on-device-heavy conversational assistant quality uplift | Gradual rollout, likely conservative but meaningful UX upgrades | **Medium-High** | On-device capability breadth, offline quality, developer API openness |
+
+### Open-source / open-research projects
+
+| Project | Follow rating | Duration/status | Accomplishments to date | Promise (what project aims for) | 12-24 month projection | Feasibility (my estimate) | Progression signals to watch |
+|---|---:|---|---|---|---|---|---|
+| Whisper ecosystem (OpenAI-origin open model + forks/tooling) | 5/5 | Since 2022, still foundational | Strong multilingual ASR baseline adopted everywhere | Ubiquitous reliable transcription substrate | Continues as baseline; specialization shifts to domain/latency optimization | **Very High** | New optimized forks, on-device quantized variants, diarization quality |
+| faster-whisper / CTranslate2 ecosystem | 4.5/5 | Mature optimization track | Big speed/cost improvements for Whisper-class inference | Production-grade, lower-cost ASR pipelines | Wider embedded and edge adoption | **Very High** | Throughput benchmarks on commodity hardware |
+| Kyutai Moshi (open research direction) | 4.5/5 | Emerging (2024+) | Helped spotlight realtime spoken-dialogue research | More natural full-duplex speech conversation | Could become a key open reference for realtime speech dialogue | **Medium-High** (hard problem, but strong signal) | Reproducible latency + overlap-turn evals, broader community replication |
+| Coqui TTS / XTTS ecosystem | 4/5 | Multi-year OSS TTS community | Flexible OSS TTS tooling and multilingual experimentation | Open, customizable TTS stacks for product teams | Remains strong for teams avoiding vendor lock-in | **High** | Voice quality benchmarks, safety/provenance add-ons |
+| Piper (lightweight local TTS) | 4/5 | Active OSS lightweight TTS | Efficient local/offline synthesis workflows | Practical private/offline TTS in constrained devices | Expands in edge + hobbyist + privacy products | **High** | New language voices, ARM/mobile performance, latency reports |
+| Vosk / Kaldi-derived deployments | 3.5/5 | Long-lived ASR ecosystem | Reliable offline ASR in constrained scenarios | Stable offline command/control and embedded use cases | Niche but durable where cloud is impossible | **High** in niche | Maintenance cadence, modern benchmark comparability |
+| Moonshine-class tiny ASR research/open releases | 4/5 | Newer small-model wave | Pushes tiny-footprint ASR viability | On-device speech recognition at lower compute | Likely rapid improvements with quantization/distillation | **Medium-High** | Public multilingual benchmark deltas, battery/runtime stats |
+| OpenVoice / style-transfer voice cloning OSS | 3/5 | Recent rapid experimentation | Demonstrated flexible voice style transfer capabilities | Highly controllable cloning and cross-lingual transfer | Technical quality rises, but policy/safety pressure will constrain deployment | **Medium** technically, **Low-Medium** in compliant production | Built-in safeguards, abuse-resistant defaults, provenance support |
+
+## How to use this list as a decision framework
+
+- If you are **buying** now (enterprise reliability): prioritize Microsoft/Azure, Google enterprise pathways, and NVIDIA-backed deployability where compliance/latency matter.
+- If you are **shipping consumer conversational UX**: track OpenAI, Google, Amazon, and ElevenLabs closely for interaction quality improvements.
+- If you are **building privacy-first/on-device**: follow Whisper optimization stacks, Piper/Coqui, and tiny-ASR projects.
+- If you are **researching frontier interaction quality**: monitor Kyutai-style realtime dialogue work and independent overlap-turn evaluation benchmarks.
+
+## Suggested cadence to track progression
+
+- **Every 4-6 weeks:** update project scores using: latency disclosures, interruption metrics, and independent evals.
+- **Quarterly:** re-rank feasibility and production readiness by domain (contact center, healthcare, education, automotive).
+- **Trigger-based updates:** any major safety incident, regulatory change, or high-quality third-party benchmark release should force immediate re-scoring.
+
+
+## Press releases/interviews/prospectus: verification tracker template
+
+When a company makes a claim in a launch post, interview, keynote, or prospectus, log it with this compact template so hype does not become planning input by default:
+
+| Company/project | Claim source type | Claimed capability | Evidence provided publicly | Independent replication? | Risk if over-claimed | Verification status |
+|---|---|---|---|---|---|---|
+| Example: Vendor X realtime voice | Press release | "near-human real-time conversation" | Edited demo video + anecdotal quotes | No | Product roadmap and staffing misallocation | Pending |
+
+Minimum verification bar before treating a claim as “real” in planning:
+
+1. Public latency statistics (median + p95) under realistic tool-calling conditions.
+2. Evidence of interruption handling success in long sessions.
+3. Clear disclosure of language/accent variance.
+4. Safety posture details (anti-spoofing, abuse detection, incident response).
+5. A third-party benchmark, customer case study, or reproducible community test.
+
+
+## Maintenance note
+
+This briefing is intended as a living tracker and should be updated on a recurring cadence as new independent evaluations and production incidents emerge.
 
 ## Bottom line
 
