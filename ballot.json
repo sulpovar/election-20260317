@@ -756,6 +756,60 @@
       ]
     },
     {
+      "id": "circuit-court-8th-gamrath",
+      "title": "Cook County Circuit Court — 8th Subcircuit (Gamrath Vacancy)",
+      "level": "Judicial · 8th Subcircuit (Lincoln Park / North–Northwest Side)",
+      "description": "Vacancy of the Hon. Celia Gamrath, elevated to the IL Appellate Court. Competitive three-way Democratic primary; no Republicans filed. Only voters who reside in the 8th Subcircuit may vote in this race.",
+      "candidates": [
+        {
+          "name": "Elizabeth Dibler",
+          "party": "Democratic",
+          "bio": "22+ years at the Cook County State's Attorney's Office; since 2018 serves as First Chair in the Criminal Prosecutions Bureau. Has prosecuted 60+ felony jury trials spanning murder, predatory criminal sexual assault, domestic battery, and attempted murder. The only candidate in this race to receive a 'Highly Recommended' rating from any evaluating bar association.",
+          "endorsements": ["CBA: Qualified", "ISBA: Qualified", "Highly Recommended by multiple bar associations"]
+        },
+        {
+          "name": "Kathleen Cunniff Ori",
+          "party": "Democratic",
+          "bio": "Loyola Chicago Law J.D. 2007; clerked for Judge Michael Mihm (C.D. Ill.) and Judge William Bauer (7th Cir.). Worked in private practice at McGuireWoods before joining the Cook County State's Attorney's Office in 2017, where she is currently Deputy Supervisor of the Special Litigation/Labor & Employment Division. Grew up in Rogers Park and Sauganash; lives in Lincoln Park.",
+          "endorsements": ["CBA: Qualified", "ISBA: Qualified", "Chicago Council of Lawyers: Qualified"]
+        },
+        {
+          "name": "Garson Fischer",
+          "party": "Democratic",
+          "bio": "Wesleyan B.A., Northwestern M.A., Georgetown Law J.D. 2005. 20+ years at the Illinois Attorney General's Office, currently Deputy Chief for Criminal Appeals. Has briefed and argued hundreds of cases before state and federal courts, including the U.S. and Illinois Supreme Courts, on issues including gun laws, domestic violence, and child exploitation. Endorsed by IL Attorney General Kwame Raoul and the Chicago Federation of Labor.",
+          "endorsements": ["CBA: Qualified", "ISBA: Qualified", "Illinois Attorney General Kwame Raoul", "Chicago Federation of Labor"]
+        }
+      ]
+    },
+    {
+      "id": "circuit-court-8th-mikva",
+      "title": "Cook County Circuit Court — 8th Subcircuit (Mikva Vacancy)",
+      "level": "Judicial · 8th Subcircuit (Lincoln Park / North–Northwest Side)",
+      "description": "Competitive three-way Democratic primary for an open seat. Incumbent Lester Finkle was appointed to this vacancy in May 2025 and is seeking election. No Republicans filed. Only voters who reside in the 8th Subcircuit may vote in this race.",
+      "candidates": [
+        {
+          "name": "Lester Finkle",
+          "party": "Democratic",
+          "status": "Incumbent — appointed May 2025",
+          "bio": "Appointed to the bench by the IL Supreme Court in May 2025; currently assigned to the Domestic Violence Division. Spent 37 years as a Cook County Assistant Public Defender, rising to Chief of Staff. Subsequently in appellate private practice. Has taught as an adjunct law professor at UIC School of Law since 1997.",
+          "endorsements": ["CBA: Qualified", "ISBA: Qualified"]
+        },
+        {
+          "name": "Katherine Morrison",
+          "party": "Democratic",
+          "bio": "Partner at Burns Noland LLP; practice focuses on medical malpractice defense and civil rights/Section 1983 defense. Previously at Dykema. Has served on the CBA's Judicial Evaluation Committee and chaired her firm's diversity and inclusion committee. Praised by peers for legal knowledge and preparation; ISBA raised concerns about limited trial experience.",
+          "endorsements": ["CBA: Qualified", "ISBA: Not Qualified — limited trial experience noted", "Women's Bar Association of Illinois", "Cook County Bar Association", "Black Women Lawyers' Association"]
+        },
+        {
+          "name": "Dan Balanoff",
+          "party": "Democratic",
+          "bio": "Solo practitioner (estate planning, probate, real estate, bankruptcy, personal injury); IL bar 2007. Until mid-2025 served as Chief Legal Officer at the Cook County Board of Review. Grandson of former Cook County Circuit Judge Miriam Balanoff; son of Circuit Judge Robert Balanoff. Submitted ~4,000 nominating signatures. Endorsed by State Sen. Robert Martwick. Subject of a recent Cook County ethics finding related to his Board of Review role, which he disputes as politically motivated; CBA also cited limited breadth of legal experience.",
+          "endorsements": ["CBA: Not Recommended", "ISBA: Not Qualified", "State Sen. Robert Martwick"],
+          "note": "Cook County ethics board found a violation related to his Board of Review role; he disputes the finding."
+        }
+      ]
+    },
+    {
       "id": "mwrd-2yr",
       "title": "Metropolitan Water Reclamation District — Commissioner (2-Year Unexpired Term)",
       "level": "Special District · Cook County",
